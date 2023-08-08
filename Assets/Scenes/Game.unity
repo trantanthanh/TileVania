@@ -227,7 +227,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -6385,14 +6385,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6032391934415120456, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6032391934415120456, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
-      propertyPath: m_GravityScale
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 6032391934415120460, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6441,13 +6433,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8180971521823052711, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
-      propertyPath: runSpeed
-      value: 10
+    - target: {fileID: 6032391934415120463, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8180971521823052711, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
-      propertyPath: jumpSpeed
-      value: 25
+    - target: {fileID: 6032391934415120463, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
+      propertyPath: m_FlipY
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}

@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
+    CapsuleCollider2D myCapsuleCollider;
 
     Animator myAnimator;
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myCapsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     void Start()
@@ -47,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (value.isPressed)
+        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) && value.isPressed)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
