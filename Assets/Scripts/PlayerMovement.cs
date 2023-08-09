@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) && value.isPressed)
+        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) && value.isPressed)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
