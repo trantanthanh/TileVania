@@ -15,8 +15,8 @@ TagManager:
   - Platform
   - Climbing
   - Bouncing
+  - Enemies
   - Player
-  - 
   - 
   - 
   - 
@@ -52,6 +52,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 395946367
+    locked: 0
+  - name: Enemies
+    uniqueID: 3594530161
     locked: 0
   - name: Player
     uniqueID: 3650173859
