@@ -605,7 +605,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10665,6 +10665,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0e711abc90701243af65a8cea5e88a0, type: 3}
+--- !u!4 &1658859999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4894199151961845659, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
+  m_PrefabInstance: {fileID: 6032391934461205892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1726302804
 GameObject:
   m_ObjectHideFlags: 0
@@ -10775,7 +10780,7 @@ GameObject:
   - component: {fileID: 1991930380}
   m_Layer: 7
   m_Name: Platforms Tilemap
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15127,63 +15132,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
---- !u!1001 &2944995467907513666
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2944995467489254964, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_Name
-      value: Bullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2944995467489254970, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
 --- !u!1001 &6032391934461205892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15284,6 +15232,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8180971521823052711, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2944995467489254964, guid: faf26f3981078f44a9d2df103f1fcc12, type: 3}
+    - target: {fileID: 8180971521823052711, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
       propertyPath: deathKick.x
       value: 20
       objectReference: {fileID: 0}
@@ -15291,5 +15243,9 @@ PrefabInstance:
       propertyPath: deathKick.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8180971521823052711, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
+      propertyPath: gunTransform
+      value: 
+      objectReference: {fileID: 1658859999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb94130c959eaee468c1ec3d23a3f9b8, type: 3}
