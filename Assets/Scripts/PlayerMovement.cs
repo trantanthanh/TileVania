@@ -95,7 +95,9 @@ public class PlayerMovement : MonoBehaviour
 
     void CheckDie()
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies"))
+        || myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Hazards"))
+        )
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
