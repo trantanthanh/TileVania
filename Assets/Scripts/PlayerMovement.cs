@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
 
     float gravityScaleAtStart;
+    bool isAlive = true;
 
     void Awake()
     {
@@ -37,9 +38,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isAlive) return;
         Run();
         FlipSprite();
         ClimbLadder();
+        CheckDie();
     }
 
     void Run()
@@ -51,11 +54,13 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
+        if (!isAlive) return;
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value)
     {
+        if (!isAlive) return;
         if (myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Platform")) && value.isPressed)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
@@ -85,5 +90,13 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1.0f);
         }
         myAnimator.SetBool("IsRunning", playerHasHorizontalSpeed);
+    }
+
+    void CheckDie()
+    {
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        {
+            isAlive = false;
+        }
     }
 }
