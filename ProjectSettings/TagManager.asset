@@ -21,7 +21,7 @@ TagManager:
   - Hazards
   - Player
   - Bullets
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -55,11 +55,14 @@ TagManager:
   - name: Climbing
     uniqueID: 395946367
     locked: 0
-  - name: Enemies
-    uniqueID: 3594530161
-    locked: 0
   - name: Hazards
     uniqueID: 2559255999
+    locked: 0
+  - name: Interactable
+    uniqueID: 3824248741
+    locked: 0
+  - name: Enemies
+    uniqueID: 3594530161
     locked: 0
   - name: Bullets
     uniqueID: 4030755029
