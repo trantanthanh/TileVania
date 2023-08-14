@@ -6,12 +6,15 @@ public class LevelExit : MonoBehaviour
 {
     [SerializeField] float timeWaitForLoadNextLevel = 1.0f;
     private void OnTriggerEnter2D(Collider2D other) {
-        StartCoroutine(LoatNextLevel());
+        if (other.tag == "Player")
+        {
+            StartCoroutine(LoatNextLevel());
+        }
     }
 
     IEnumerator LoatNextLevel()
     {
-        yield return new WaitForSecondsRealtime(2.0f);
+        yield return new WaitForSecondsRealtime(timeWaitForLoadNextLevel);
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextSceneIndex >= SceneManager.sceneCountInBuildSettings)
         {
