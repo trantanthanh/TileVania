@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        speedX = player.transform.localScale.x * bulletSpeed;
+        speedX = Mathf.Sign(player.transform.localScale.x) * bulletSpeed;
         transform.localScale = new Vector2(Mathf.Sign(player.transform.localScale.x), 1.0f);
     }
 
