@@ -7,7 +7,6 @@ using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] int scorePerCoint = 10;
     int currentScore = 0;
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
@@ -57,9 +56,9 @@ public class GameSession : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void IncreaseScore()
+    public void IncreaseScore(int score)
     {
-        currentScore += scorePerCoint;
+        currentScore += score;
         scoreText.text = currentScore.ToString();
     }
 }

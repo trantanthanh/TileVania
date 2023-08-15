@@ -16232,26 +16232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 733988639, guid: 4189f0ad6e7abee4b800e76a8be40750, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 383.6024
-      objectReference: {fileID: 0}
-    - target: {fileID: 733988639, guid: 4189f0ad6e7abee4b800e76a8be40750, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 101.5435
-      objectReference: {fileID: 0}
-    - target: {fileID: 733988639, guid: 4189f0ad6e7abee4b800e76a8be40750, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 237.28564
-      objectReference: {fileID: 0}
-    - target: {fileID: 733988640, guid: 4189f0ad6e7abee4b800e76a8be40750, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 812376828, guid: 4189f0ad6e7abee4b800e76a8be40750, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4232318197297995436, guid: 4189f0ad6e7abee4b800e76a8be40750, type: 3}
       propertyPath: m_Name
       value: Game Session
