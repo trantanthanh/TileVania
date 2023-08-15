@@ -10,6 +10,7 @@ public class CoinPickup : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(coinPickupSFX, Camera.main.transform.position, 0.5f);
             Destroy(gameObject);
+            FindObjectOfType<GameSession>().IncreaseScore();
         }
     }
 }
