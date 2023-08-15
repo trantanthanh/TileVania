@@ -54,6 +54,7 @@ public class GameSession : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         Destroy(gameObject);
+        Destroy(FindObjectOfType<ScenePersist>().gameObject);
     }
 
     public void IncreaseScore(int score)
